@@ -1,0 +1,24 @@
+algoritmo "Tabuada"
+
+var
+  opcao: caractere
+  numero, multiplicador: inteiro
+
+inicio
+  escreval("Digite 'S' para iniciar ou 'N' para encerrar")
+  leia(opcao)
+
+  se opcao = "S" entao
+    para numero de 1 ate 10 faca
+      escreval("Tabuada do ", numero, " :")
+
+      para multiplicador de 1 ate 10 faca
+        escreval(numero, " x ", multiplicador, " = ", numero * multiplicador)
+      fimpara
+    fimpara
+  
+  senao
+    escreval("Programa encerrado")
+  fimse
+
+fimalgoritmo

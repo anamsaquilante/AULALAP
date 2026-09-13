@@ -1,0 +1,56 @@
+algoritmo "JogoDaSenha"
+
+var
+   senha, dica, palpite: caractere
+   tentativasPrevistas, tentativas: inteiro
+
+inicio
+   escreval("Digite a palavra-chave")
+   leia(senha)
+
+   escreval("Digite uma dica")
+   leia(dica)
+
+   escreval("Quantas tentativas você acha que o Jogador 2 vai precisar? ")
+   leia(tentativasPrevistas)
+
+   escreval("")
+   escreval("A dica é: ", dica)
+   escreval("")
+
+   tentativas <- 0
+
+   enquanto palpite <> senha faca
+
+      tentativas <- tentativas + 1
+
+      escreva(tentativas, "ª tentativa: ")
+      leia(palpite)
+
+      se palpite = senha entao
+         escreval("")
+         escreval("Parabéns! Você acertou a palavra!")
+      senao
+         escreval(palpite)
+         escreval("Palavra incorreta. Tente novamente.")
+      fimse
+   fimenquanto
+
+   escreval("")
+   escreval("Total de tentativas: ", tentativas)
+   escreval("Tentativas previstas pelo Jogador 1: ", tentativasPrevistas)
+
+   se tentativas < tentativasPrevistas entao
+      escreval("Jogador 2 venceu!")
+
+   senao
+      se tentativas = tentativasPrevistas entao
+         escreval("Jogador 1 venceu!")
+
+      senao
+         escreval("O jogo terminou em empate!")
+
+      fimse
+   fimse
+
+fimalgoritmo

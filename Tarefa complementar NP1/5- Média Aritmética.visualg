@@ -1,0 +1,24 @@
+algoritmo "MediaDeVariosNumeros"
+
+var
+  quantidade, contador: inteiro
+  numero, soma, media: real
+
+inicio
+  soma <- 0
+
+  escreval("Digite a quantidade de números")
+  leia(quantidade)
+
+  para contador de 1 ate quantidade faca
+    escreval("Digite o ", contador, "º número")
+    leia(numero)
+
+    soma <- soma + numero
+  fimpara
+
+  media <- soma / quantidade
+
+  escreval("A média dos números é: ", media)
+
+fimalgoritmo

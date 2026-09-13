@@ -1,0 +1,13 @@
+algoritmo "NomeESobrenome"
+
+var
+  nome, sobrenome: caractere
+
+inicio
+  escreval("Digite seu primeiro nome: ")
+  leia(nome)
+  escreval("Digite seu sobrenome")
+  leia(sobrenome)
+  escreval("Seu nome é ", nome, " ", sobrenome)
+
+fimalgoritmo

@@ -1,0 +1,14 @@
+algoritmo "ForçaEmNewtons"
+
+var
+  forca, massa, aceleracao: real
+
+inicio
+  escreval("Digite a massa do objeto")
+  leia(massa)
+  escreval("Digite a aceleração do objeto")
+  leia(aceleracao)
+  forca <- massa * aceleracao
+  escreval("A força em newtons é de ", forca, "N")
+
+fimalgoritmo

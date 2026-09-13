@@ -1,0 +1,16 @@
+algoritmo "Exponenciacao"
+
+var
+  base, expoente, potencia: inteiro
+
+inicio
+  escreval("Digite a base do número a ser calculado")
+  leia(base)
+  escreval("Digite o expoente")
+  leia(expoente)
+
+  potencia <- base ^ expoente
+
+  escreval("O resultado da potência é: " potencia)
+
+fimalgoritmo

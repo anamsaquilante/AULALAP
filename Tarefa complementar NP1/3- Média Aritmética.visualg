@@ -1,0 +1,16 @@
+algoritmo "MediaAritmetica"
+
+var
+  numero1, numero2: inteiro
+  media: real
+
+inicio
+  escreval("Digite o primeiro número: ")
+  leia(numero1)
+  escreval("Digite o segundo número: ")
+  leia(numero2)
+
+  media <- (numero1 + numero2)/2
+  escreval("A média aritmética dos números é: ", media)
+
+fimalgoritmo
