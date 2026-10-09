@@ -1,0 +1,30 @@
+algoritmo " Organizar Vetor"
+
+var
+  numeros: vetor[0..10] inteiro
+  contador, contador2, auxiliar: inteiro
+
+inicio
+
+  para contador de 1 ate 10 faca
+    escreval("Digite o numero: ")
+    leia(numeros[contador])
+  fimpara
+
+  para contador de 1 ate 9 faca
+    para contador2 de 1 ate 10 - contador faca
+      se numeros[contador2] > numeros[contador2 + 1] entao
+        auxiliar <- numeros[contador2]
+        numeros[contador2] <- numeros[contador2 + 1]
+        numeros[contador2 + 1] <- auxiliar
+      fimse
+    fimpara
+  fimpara
+
+  contador <- 0
+
+  para contador de 1 ate 10 faca
+    escreva(numeros[contador], " - ")
+  fimpara
+
+fimalgoritmo
