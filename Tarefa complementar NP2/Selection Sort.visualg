@@ -1,0 +1,48 @@
+algoritmo "SelectionSort"
+
+var
+   numeros: vetor[1..10] inteiro
+   i, j, menor_idx, temp: inteiro
+
+inicio
+   numeros[1] <- 64
+   numeros[2] <- 25
+   numeros[3] <- 12
+   numeros[4] <- 51
+   numeros[5] <- 11
+   numeros[6] <- 90
+   numeros[7] <- 45
+   numeros[8] <- 33
+   numeros[9] <- 88
+   numeros[10] <- 5
+
+   escreval("--- VETOR ORIGINAL ---")
+   para i de 1 ate 10 faca
+      escreva(numeros[i], " ")
+   fimpara
+   escreval()
+   escreval()
+
+   para i de 1 ate 9 faca
+      menor_idx <- i
+      
+      para j de (i + 1) ate 10 faca
+         se numeros[j] < numeros[menor_idx] entao
+            menor_idx <- j
+         fimse
+      fimpara
+      
+      se menor_idx <> i entao
+         temp <- numeros[i]
+         numeros[i] <- numeros[menor_idx]
+         numeros[menor_idx] <- temp
+      fimse
+   fimpara
+
+   escreval("--- VETOR ORDENADO (SELECTION SORT) ---")
+   para i de 1 ate 10 faca
+      escreva(numeros[i], " ")
+   fimpara
+   escreval()
+
+fimalgoritmo
