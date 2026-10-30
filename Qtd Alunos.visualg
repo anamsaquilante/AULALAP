@@ -3,7 +3,7 @@ algoritmo "Cadastro de Alunos"
 var
   nomeAluno: caractere
   qtdAlunos, contador: inteiro
-  nomesAlunos: vetor [1..10] de caractere
+  nomesAlunos: vetor [1..1024] de caractere
 
 inicio
 
@@ -19,7 +19,7 @@ inicio
 
   contador <- 1
 
-  para contador de 1 ate 10 faca
+  para contador de 1 ate qtdAlunos faca
     escreval(nomesAlunos[contador])
   fimpara
 
